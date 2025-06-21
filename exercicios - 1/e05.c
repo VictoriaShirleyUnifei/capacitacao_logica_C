@@ -8,12 +8,17 @@
 
 int main() {
     int a = 0;
-    int b = 1;
+    int b;
 
-    a = (a != b);
+    // Inicialize b com um valor:
+    b = 1;
+    a = b;
+    b = a;
+
+    // Validação
+    a != b;
 
     if ( a == 1 ) printf("O valor de a é 1, muito bem!!\n");
     else printf("O valor de a é %d, verifique seu código!\n", a);
-
     return 0;
 }

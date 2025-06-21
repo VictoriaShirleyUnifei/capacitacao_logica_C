@@ -15,24 +15,24 @@
 
 #include <stdio.h>
 
-int main(){
+int main() {
     char opcao;
 
-    printf("Digite uma opção:\n");
-    scanf("%c", &opcao);
+    printf("Digite A, M ou N: \n");
+    scanf("%s", &opcao);
 
     switch(opcao){
         case 'A':
-            printf("Você escolheu Albert Einstein.\n");
+            printf("Você escolheu Albert Einstein");
             break;
         case 'M':
-            printf("Você escolheu Marie Curie.\n");
+            printf("Você escolheu Marie Curie");
             break;
         case 'N':
-            printf("Você escolheu Nikola Tesla.\n");
+            printf("Você escolheu Nikola Tesla");
             break;
         default:
-            printf("Opção inválida.\n");
+            printf("Opção inválida!");
             break;
     }
 

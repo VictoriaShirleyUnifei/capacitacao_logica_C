@@ -14,7 +14,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h>
 
 int main() {
     int secreto, palpite, tentativas = 0;
@@ -24,20 +23,18 @@ int main() {
 
     do {
         printf("Palpite um número (de 1-50): ");
+        // Complete o scanf
         scanf("%d", &palpite);
         tentativas++;
 
-        if(palpite == secreto){
-            printf("Parabéns, você acertou com %d tentativas!\n", tentativas);
-        }else if (palpite < secreto) {
-            if (palpite < (secreto - 10)) {
-                printf("Muito baixo!\n");
-            }
-        } else {
-            if (palpite > (secreto + 10)) {
-                printf("Muito alto!\n");
-            }
-        }
+        // Substitua os "???" dos IFs pelas comparações corretas
+        if ( palpite < secreto)
+            printf("Muito baixo!\n");
+        else if ( palpite > secreto)
+            printf("Muito alto!\n");
+        else
+            // Escreva uma mensagem de parabéns que exiba o número de tentativas
+            printf( "Parabéns, você acertou o número após %d tentativa(s)!", tentativas);
 
     } while (palpite != secreto);
 

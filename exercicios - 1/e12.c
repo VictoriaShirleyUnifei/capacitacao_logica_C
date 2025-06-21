@@ -25,19 +25,19 @@ int main() {
 
     switch (opcao) {
         case 1:
-            system("xdg-open https://www.facebook.com/ExMachina.UNIFEI/");
+            system("start https://www.facebook.com/ExMachina.UNIFEI/");
             break;
         case 2:
-            system("xdg-open https://www.instagram.com/exmachina.unifei/");
+            system("start https://www.instagram.com/exmachina.unifei/");
             break;
         case 3:
-            system("xdg-open https://www.tiktok.com/@exmachina.unifei");
+            system("start https://www.tiktok.com/@exmachina.unifei");
             break;
         case 4:
-            system("xdg-open https://www.linkedin.com/company/ex-machina-unifei/?originalSubdomain=br");
+            system("start https://www.linkedin.com/company/ex-machina-unifei/?originalSubdomain=br");
             break;
         case 5:
-            system("xdg-open https://librex-lemon.vercel.app/home");
+            system("start https://librex-lemon.vercel.app/home");
             break;
         default:
             printf("Opção inválida. Tente um número de 1 a 5.\n");

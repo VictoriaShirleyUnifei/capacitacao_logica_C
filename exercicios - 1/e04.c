@@ -6,12 +6,15 @@
 #include <stdio.h>
 
 int main() {
-    char let1 = 'G', let2 = 'B', let3 = 'O';
+    // Crie as variáveis aqui:
+    char a = 'A', b = 'B', c = 'C';
+
+
 
     // Substitua ??? pelo nomes de cada variável criada para exibi-las
-    printf("1º caracter: %c \n", let1 );
-    printf("2º caracter: %c \n", let2 );
-    printf("3º caracter: %c \n", let3 );
+    printf("1º caracter: %c \n", a );
+    printf("2º caracter: %c \n", b );
+    printf("3º caracter: %c \n", c );
 
     return 0;
 }

@@ -1,5 +1,5 @@
 /*
-    O programa abaixo faz a leitura de 5 inteiros e os armazena em um vetor.
+    O programa abaixo faz a leitura de 10 inteiros e os armazena em um vetor.
     Em seguida, imprime os dados contidos no vetor e soma todos.
     Os comentário foram usados apenas para explicar o que cada parte do código faz.
     Execute esse programa, teste, depois modifique-o para que leia 10 inteiros.
@@ -11,22 +11,25 @@
 #include <stdio.h>
 
 int main() {
-    int v[10];
-    int soma = 0, i;
+    int v[10];  // declara um vetor de 10 posições
+    int soma, i;
 
     printf("Por favor, digite 10 inteiros:\n");
     for (i = 0; i < 10; i++) {
         printf("%dº valor: ", i + 1);
-        scanf("%d", &v[i]);
+        scanf("%d", &v[i]);  // Guarda cada número do vetor
     }
 
+    // Imprime os números armazenados no vetor
     printf("\nSeus números são:\n");
     for (i = 0; i < 10; i++) {
         printf("v[%d] = %d\n", i, v[i]);
     }
 
+    // Calcula soma dos números do vetor
+    soma = 0;
     for (i = 0; i < 10; i++) {
-        soma += v[i];
+        soma += v[i];  // Soma cada número do vetor, conforme seu índice i
     }
     printf("A soma dos números é: %d\n", soma);
 
